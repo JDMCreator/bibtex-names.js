@@ -4,13 +4,13 @@
 
 Version 1.0 [7.15KB original, 2.82KB minified, 1.29KB minified & gzipped]
 
-####To-Do list
+#### To-Do list
 
 * Support @String and variables
 * Support quotes
 * Add options
 
-####Example
+#### Example
 
     window.parseBibtexNames("Barack Obama and de la Fontaine, Jean and Thomson, jr., Aiden and others");
     
@@ -28,6 +28,7 @@ Version 1.0 [7.15KB original, 2.82KB minified, 1.29KB minified & gzipped]
 			    first : "Aiden",
 			    jr : "jr.",
 			    last : "Thomson"
+		    },
 		    {
 		      special : "others"
 		    }
@@ -43,10 +44,10 @@ Version 1.0 [7.15KB original, 2.82KB minified, 1.29KB minified & gzipped]
 	last : Fontaine
 	von : la
 
-	Jean {\empty d}e la Fontaine
+	Jean {\relax d}e la Fontaine
 	=> first : Jean
 	last : Fontaine
-	von : {\empty d}e la
+	von : {\relax d}e la
 
 	Jean {-}de la Fontaine
 	=> first : Jean
@@ -78,10 +79,10 @@ Version 1.0 [7.15KB original, 2.82KB minified, 1.29KB minified & gzipped]
 	last : Bois Joli
 	von : Jean de~la Fontaine du
 	
-	Adrien Jean {d}e~la Fontaine~ ~{\empty d}u Bois Joli
+	Adrien Jean {d}e~la Fontaine~ ~{\relax d}u Bois Joli
 	=> first : Adrien Jean {d}e
 	last : Bois Joli
-	von : la~Fontaine~ ~{\empty d}u
+	von : la~Fontaine~ ~{\relax d}u
 
 #### License, issues and details
 
