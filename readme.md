@@ -1,4 +1,4 @@
-##bibtex-names.js
+## bibtex-names.js
 
 **Bibtex-names.js** allows you to parse names using the BibTeX format. It supports almost most of the cases and aims to support all of them. It understands basic LaTeX but doesn't parse it.
 
